@@ -1071,6 +1071,9 @@ def plot_coverage_track_pair_bins(
     save_suffix="default",
     gene_slice=None,
     anno_df=None,
+    long_seq_replacement=False,
+    seq_replace_start=None,
+    seq_replace_end=None
 ):
 
     plot_start = center_pos - plot_window // 2
@@ -1087,6 +1090,13 @@ def plot_coverage_track_pair_bins(
 
     center_bin = (center_pos - start) // bin_size - pad
     mut_bin = (poses[0] - start) // bin_size - pad
+
+    # only calculate it if the sequence needs replacement
+    if long_seq_replacement:
+        seq_replace_start_bin = (seq_replace_start - start) // bin_size - pad
+        seq_replace_end_bin = (seq_replace_end - start) // bin_size - pad
+
+    
 
     # Get annotation positions
     anno_poses = []
@@ -1213,16 +1223,20 @@ def plot_coverage_track_pair_bins(
                 linestyle="-",
                 zorder=-1,
             )
+        if not long_seq_replacement:
+            plt.scatter(
+                [mut_bin],
+                [0.075 * max_y],
+                color="black",
+                s=125,
+                marker="*",
+                zorder=100,
+                label="SNP",
+            )
+        else:
+            plt.axvspan(seq_replace_start_bin, seq_replace_end_bin, color='yellow', alpha=0.5, label='replaced_seq')
 
-        plt.scatter(
-            [mut_bin],
-            [0.075 * max_y],
-            color="black",
-            s=125,
-            marker="*",
-            zorder=100,
-            label="SNP",
-        )
+
 
         plt.xlim(plot_start_bin, plot_end_bin - 1)
 

@@ -21,7 +21,7 @@
 7541	GTEX-1H3O1-1726-SM-9WYSR.1	/home/drk/tillage/datasets/human/rna/recount3/brain/GTEX-1H3O1-1726-SM-9WYSR.1/coverage.w5	768	384	0.01	sum_sqrt	7541	RNA:brain
 7542	GTEX-13W3W-1226-SM-5LU4H.1	/home/drk/tillage/datasets/human/rna/recount3/breast/GTEX-13W3W-1226-SM-5LU4H.1/coverage.w5	768	384	0.01	sum_sqrt	7542	RNA:breast
 7543	GTEX-1GN1W-1926-SM-7P8TH.1	/home/drk/tillage/datasets/human/rna/recount3/breast/GTEX-1GN1W-1926-SM-7P8TH.1/coverage.w5	768	384	0.01	sum_sqrt	7543	RNA:breast
-7544	GTEX-ZYT6-0126-SM-5E45J.1	/home/drk/tillage/datasets/human/rna/recount3/breast/GTEX-ZYT6-0126-SM-5E45J.1/coverage.w5	768	384	0.01	sum_sqrt	7544	RNA:breast
+7544	GTEX-ZYT6-0126-SM-5E45J.1	/home/drk/tillage/xxdatasets/human/rna/recount3/breast/GTEX-ZYT6-0126-SM-5E45J.1/coverage.w5	768	384	0.01	sum_sqrt	7544	RNA:breast
 7545	GTEX-PLZ4-2226-SM-EZ6KS.1	/home/drk/tillage/datasets/human/rna/recount3/cervix_uteri/GTEX-PLZ4-2226-SM-EZ6KS.1/coverage.w5	768	384	0.01	sum_sqrt	7545	RNA:cervix_uteri
 7546	GTEX-T6MO-1426-SM-4DM73.1	/home/drk/tillage/datasets/human/rna/recount3/cervix_uteri/GTEX-T6MO-1426-SM-4DM73.1/coverage.w5	768	384	0.01	sum_sqrt	7546	RNA:cervix_uteri
 7547	GTEX-U3ZN-1626-SM-4DXTZ.1	/home/drk/tillage/datasets/human/rna/recount3/cervix_uteri/GTEX-U3ZN-1626-SM-4DXTZ.1/coverage.w5	768	384	0.01	sum_sqrt	7547	RNA:cervix_uteri
